@@ -1,0 +1,312 @@
+/* Base styles */
+:root {
+  --primary-color: #67388f;
+  --primary-hover: #43255c;
+  --text-color: #2c3e50;
+  --text-light: #7f8c8d;
+  --border-color: #dcdfe6;
+  --background-light: #f8f9fa;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --success-color: #2ecc71;
+  --error-color: #e74c3c;
+  --card-radius: 12px;
+  --input-radius: 6px;
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 0.75rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+}
+
+/* Reset and global styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--background-light);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+/* Main container */
+.dashboardContainer {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: var(--spacing-xl);
+}
+
+/* Header styles */
+.header {
+  text-align: center;
+  margin-bottom: var(--spacing-xl);
+}
+
+.header h1 {
+  font-size: clamp(1.8rem, 5vw, 2.2rem);
+  margin-bottom: var(--spacing-xs);
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+.header p {
+  font-size: clamp(0.9rem, 3vw, 1.1rem);
+  color: var(--text-light);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Registration section */
+.registrationSection {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+/* Form card */
+.formCard {
+  background-color: #ffffff;
+  border-radius: var(--card-radius);
+  box-shadow: 0 4px 20px var(--shadow-color);
+  padding: clamp(var(--spacing-lg), 4vw, var(--spacing-xl));
+  width: 100%;
+  max-width: 700px;
+  transition: transform 0.3s ease;
+}
+
+.formCard:hover {
+  transform: translateY(-5px);
+}
+
+.formCard h2 {
+  font-size: clamp(1.2rem, 4vw, 1.5rem);
+  margin-bottom: var(--spacing-lg);
+  color: var(--text-color);
+  border-bottom: 2px solid #ecf0f1;
+  padding-bottom: var(--spacing-sm);
+}
+
+/* Form layout */
+.registerForm {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+  position: relative;
+}
+
+.formRow {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-md);
+}
+
+/* Form inputs */
+.formInput,
+.formSelect {
+  padding: var(--spacing-sm) var(--spacing-md);
+  border: 1px solid var(--border-color);
+  border-radius: var(--input-radius);
+  font-size: clamp(0.9rem, 2vw, 1rem);
+  transition: all 0.3s ease;
+  width: 100%;
+  background-color: white;
+}
+
+.formInput:focus,
+.formSelect:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+}
+
+.formInput::placeholder {
+  color: #b2b2b2;
+}
+
+/* Select styles */
+.formSelect {
+  height: 2.7rem;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23888' d='M10.293 3.293a1 1 0 0 1 1.414 1.414l-5 5a1 1 0 0 1-1.414 0l-5-5a1 1 0 1 1 1.414-1.414L6 7.586l4.293-4.293z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  padding-right: 2.5rem;
+}
+
+/* Form labels */
+label {
+  font-weight: 600;
+  font-size: clamp(0.85rem, 2vw, 0.95rem);
+  color: var(--text-color);
+}
+
+/* Autocomplete suggestion styles */
+.suggestionContainer {
+  position: relative;
+}
+
+.suggestionsList {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: white;
+  border: 1px solid var(--border-color);
+  border-radius: 0 0 var(--input-radius) var(--input-radius);
+  box-shadow: 0 4px 10px var(--shadow-color);
+  max-height: 200px;
+  overflow-y: auto;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  z-index: 10;
+}
+
+.suggestionItem {
+  padding: var(--spacing-sm) var(--spacing-md);
+  cursor: pointer;
+  transition: background-color 0.2s;
+  font-size: clamp(0.85rem, 2vw, 0.95rem);
+}
+
+.suggestionItem:hover {
+  background-color: #f0f5ff;
+  color: var(--primary-color);
+}
+
+/* Submit button */
+.submitButton {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: var(--input-radius);
+  padding: clamp(0.75rem, 2.5vw, 0.9rem);
+  font-size: clamp(1rem, 2.5vw, 1.1rem);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: var(--spacing-sm);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.submitButton:hover {
+  background-color: var(--primary-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.submitButton:active {
+  transform: translateY(0);
+}
+
+.submitButton:disabled {
+  background-color: #b2b2b2;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.formCard {
+  animation: fadeIn 0.5s ease-out;
+}
+
+/* Responsive breakpoints */
+/* Extra Small (mobile phones) */
+@media (max-width: 480px) {
+  .dashboardContainer {
+    padding: var(--spacing-md);
+  }
+  
+  .formCard {
+    padding: var(--spacing-md);
+    border-radius: var(--input-radius);
+  }
+  
+  .formRow {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-sm);
+  }
+  
+  .submitButton {
+    width: 100%;
+  }
+}
+
+/* Small (large phones, small tablets) */
+@media (min-width: 481px) and (max-width: 767px) {
+  .formRow {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+  }
+  
+  .dashboardContainer {
+    padding: var(--spacing-lg);
+  }
+  
+  .formCard {
+    padding: var(--spacing-lg);
+  }
+}
+
+/* Medium (tablets, small laptops) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .formRow {
+    gap: var(--spacing-md);
+  }
+}
+
+/* Large (desktops, large laptops) */
+@media (min-width: 992px) {
+  .formCard {
+    padding: var(--spacing-xl);
+  }
+  
+  .submitButton {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: var(--spacing-md);
+  }
+}
+
+/* Print styles */
+@media print {
+  .dashboardContainer {
+    padding: 0;
+  }
+  
+  .formCard {
+    box-shadow: none;
+    border: 1px solid #ccc;
+  }
+  
+  .submitButton {
+    display: none;
+  }
+}

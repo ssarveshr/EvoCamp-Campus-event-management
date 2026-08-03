@@ -1,0 +1,60 @@
+.navbar {
+  background-color: #1a202c;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo h1 {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.navLinks {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navLinks li {
+  margin: 0;
+}
+
+.navLinks a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.navLinks a:hover,
+.navLinks .active {
+  background-color: #3182ce;
+  border-radius: 5px;
+}
+
+.profileSection {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: #ffffff;
+}
+
+.logoutBtn {
+  background-color: #e53e3e;
+  color: #ffffff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.logoutBtn:hover {
+  background-color: #c53030;
+}

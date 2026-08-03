@@ -1,0 +1,454 @@
+/* .dashboardContainer {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 100%;
+  padding: 20px;
+  background-color: #f0f0f0;
+  color: #4b0082;
+}
+
+.header {
+  background-color: #43255c;
+  color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 32px;
+}
+
+.orgInfo {
+  margin-top: 10px;
+}
+
+.orgInfo p {
+  margin: 5px 0;
+  font-size: 14px;
+  opacity: 0.85;
+}
+
+.mainContent {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+}
+
+.eventSection, 
+.facultySection, 
+.registrationSection {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.eventCards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.eventCard {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+  width: 250px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.eventCard:hover {
+  background-color: #f3e9ff;
+}
+
+.eventImage {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.placeholderImage {
+  width: 100%;
+  height: 150px;
+  background-color: #b794da;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.eventCard h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #4b0082;
+}
+
+.eventCard p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #333;
+}
+
+.registrationSection {
+  grid-column: span 2;
+}
+
+.studentList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.studentCard {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 10px 15px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  width: 200px;
+}
+
+.studentCard h4 {
+  margin: 0;
+  font-size: 16px;
+  color: #4b0082;
+}
+
+.studentCard p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #333;
+}
+
+.addButton {
+  background-color: #b794da;
+  color: #ffffff;
+  padding: 12px 25px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: bold;
+  text-align: center;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.addButton:hover {
+  background-color: #43255c;
+}
+
+.facultySection {
+  grid-column: span 1;
+}
+
+.facultyGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.facultyCard {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.facultyAvatar {
+  width: 40px;
+  height: 40px;
+  background-color: #43255c;
+  color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.facultyCard h3 {
+  margin: 0;
+  font-size: 16px;
+  color: #4b0082;
+}
+
+.facultyCard p {
+  margin: 2px 0;
+  font-size: 14px;
+  color: #333;
+}
+
+.actionButton {
+  background-color: #d3a1ff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: background-color 0.3s;
+}
+
+.actionButton:hover {
+  background-color: #c084f5;
+}
+
+.sectionHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.sectionHeader h2 {
+  margin: 0;
+  font-size: 20px;
+  color: #4b0082;
+} */
+/* .dashboardContainer {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 100%;
+  padding: 20px;
+  background-color: #f0f0f0;
+  color: #4b0082;
+}
+
+.header {
+  background-color: #43255c;
+  color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 32px;
+}
+
+.orgInfo {
+  margin-top: 10px;
+}
+
+.orgInfo p {
+  margin: 5px 0;
+  font-size: 14px;
+  opacity: 0.85;
+}
+
+.mainContent {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.eventSection {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.sectionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.addButton {
+  background-color: #b794da;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.addButton:hover {
+  background-color: #43255c;
+}
+
+.eventsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.eventCard {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.eventCard:hover {
+  transform: scale(1.02);
+}
+
+.eventImage img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.eventContent h3 {
+  font-size: 18px;
+  color: #4b0082;
+  margin-bottom: 5px;
+}
+
+.eventContent p {
+  font-size: 14px;
+  color: #333;
+} */
+
+.dashboardContainer {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 100%;
+  padding: 20px;
+  background-color: #f0f0f0;
+  color: #4b0082;
+}
+
+.header {
+  background-color: #43255c;
+  color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 32px;
+}
+
+.orgInfo {
+  margin-top: 10px;
+}
+
+.orgInfo p {
+  margin: 5px 0;
+  font-size: 14px;
+  opacity: 0.85;
+}
+
+.mainContent {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.eventSection {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.sectionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.addButton {
+  background-color: #b794da;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.addButton:hover {
+  background-color: #43255c;
+}
+
+.eventsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.eventCard {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.eventCard:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+.eventImage {
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
+  background-color: #ddd;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.eventImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.eventContent {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.eventContent h3 {
+  font-size: 18px;
+  color: #4b0082;
+  margin-bottom: 5px;
+}
+
+.eventContent p {
+  font-size: 14px;
+  color: #333;
+}
+
+.eventContent .date, .eventContent .location {
+  color: #4b0082;
+  font-weight: bold;
+}

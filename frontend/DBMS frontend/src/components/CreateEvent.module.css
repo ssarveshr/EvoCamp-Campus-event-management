@@ -1,0 +1,119 @@
+
+ .dashboardContainer {
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: #43255c;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.eventCreationSection {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+}
+
+.eventCreationSection h2 {
+  font-size: 1.8rem;
+  color: #43255c;
+  margin-bottom: 20px;
+}
+
+.createEventForm {
+  display: grid;
+  gap: 20px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+input[type="text"], textarea {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  outline: none;
+}
+
+input[type="text"]:focus, textarea:focus {
+  border-color: #5e4b8b;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.createEventButton {
+  background-color: #43255c;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.createEventButton:hover {
+  background-color: #4b3a7d;
+}
+
+.tasksSection {
+  margin-top: 40px;
+}
+
+.tasksSection h3 {
+  font-size: 1.5rem;
+  color: #5e4b8b;
+  margin-bottom: 15px;
+}
+
+.taskList {
+  list-style: none;
+  padding-left: 0;
+}
+
+.taskItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.taskItem input[type="checkbox"] {
+  margin-right: 10px;
+  accent-color: #5e4b8b;
+}
+
+.taskItem label {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.taskItem input[type="checkbox"]:checked + label {
+  text-decoration: line-through;
+  color: #bbb;
+}
